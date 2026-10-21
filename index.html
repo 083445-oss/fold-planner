@@ -30,7 +30,7 @@ $('#export').onclick=()=>{let blob=new Blob([JSON.stringify({app:'fold-planner',
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
 import {getAuth,GoogleAuthProvider,signInWithPopup,signInWithRedirect,getRedirectResult,onAuthStateChanged,signOut} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import {getFirestore,doc,onSnapshot,setDoc,enableIndexedDbPersistence} from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
-const firebaseConfig={apiKey:'AIzaSyBn-r1uVgZeMyHqnooiT2G9Pwe-yPvdy2I',authDomain:'fold-planner.firebaseapp.com',projectId:'fold-planner',storageBucket:'fold-planner.firebasestorage.app',messagingSenderId:'645140229435',appId:'1:645140229435:web:5efeacf9ad5a40b0691b1e'};
+const firebaseConfig={apiKey:'AIzaSyBn-n1uVgZeMyHqnooiT2G9Pwe-yPvdy2I',authDomain:'fold-planner.firebaseapp.com',projectId:'fold-planner',storageBucket:'fold-planner.firebasestorage.app',messagingSenderId:'645140229435',appId:'1:645140229435:web:5efeacf9ad5a40b0691b1e'};
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
 const login=document.querySelector('#cloud-login'),upload=document.querySelector('#cloud-upload'),status=document.querySelector('#status');
 let uid=null,ref=null,unsub=null,ready=false,dirty=false,timer=null,writing=false,pending=null,cloudExists=false,initial=true;
